@@ -1,0 +1,23 @@
+package com.factorysetter;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+public class FactorySetter {
+	
+	public static SessionFactory factoryprovier() {
+		Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(RealInfo.class).addAnnotatedClass(CredInfo_internal.class);
+		
+		StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+			
+		SessionFactory sessionFactory = config.buildSessionFactory(registry);
+		
+		return sessionFactory ;
+
+	}
+}

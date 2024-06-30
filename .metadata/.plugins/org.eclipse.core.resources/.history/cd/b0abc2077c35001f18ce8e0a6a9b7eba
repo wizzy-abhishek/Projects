@@ -1,0 +1,203 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.List" %>
+<%@ page import="com.pojo.RealInfo" %>
+<%@ page import="java.util.ArrayList" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>DELETE</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .left-column, .right-column {
+            width: 45%;
+            margin: 2.5%;
+        }
+
+        .scrollable-table {
+            overflow-y: auto;
+            height: calc(90vh - 60px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        form input, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            margin-down: 10px;
+            margin-right: 20px;
+            margin-top: 10px;
+        }
+
+        .form-group {
+            width: 250px;
+            height: 60px;
+            margin: 0 auto;
+        }
+
+        .header text-center {
+            width: 300px;
+            height: 300px;
+            margin: 15px auto;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .logout-btn {
+            background-color: cyan !important;
+            border-color: cyan !important;
+        }
+
+        @media (max-width: 768px) {
+            .left-column, .right-column {
+                width: 100%;
+                order: 1;
+            }
+
+            .scrollable-table {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<%response.setHeader("Cache-Control", "no-cache , no-store , must-revalidate");
+	response.setHeader("Pragma", "no-cache");
+%>
+<nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand">DELETE PAGE</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <form action="LoggedIn" method="post">
+            <button type="submit" class="btn nav-link active" aria-current="page">Home</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="Add_Details" method="post">
+            <button type="submit" class="btn nav-link">ADD</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="Deleting" method="get">
+            <button type="submit" class="btn nav-link">DELETE</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="/option3" method="get">
+            <button type="submit" class="btn nav-link">MODIFY</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="Logout" method="post">
+            <button type="submit" class="btn nav-link logout-btn">LOG OUT</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="left-column">
+    <div class="header text-center">
+    <img src="Superman.png" alt="Website Logo" height="300" width="300" >
+    </div>
+    
+    
+    <form action="Complete_Delete" method="post">
+        <div class="form-group">
+            <input type="text" name="Domain" placeholder=" &nbsp Give the provided number " required style="width: 310px; height: 45px; margin: 0 auto;">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-sm"  style="width: 310px; height: 45px; margin: 0 auto;">DELETE</button>
+        </div>
+    </form>
+</div>
+<hr>
+
+<div class="right-column">
+    <div class="scrollable-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Provided No.</th>
+                    <th>Domain</th>
+                    <th>ID of the Domain</th>
+                    <th>PASS WORD</th>
+                    <th>DATE and TIME</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <%
+                    List<RealInfo> realInfoList = (List<RealInfo>) session.getAttribute("realInfoList");
+                    if (realInfoList != null) {
+                        int providedNo = 1;
+                        for (RealInfo info : realInfoList) {
+                            %>
+                            <tr>
+                                <td><%= info.getId() %></td>
+                                <td><%= info.getDomain() %></td>
+                                <td><%= info.getUserID() %></td>
+                                <td><%= info.getPassword() %></td>
+                                <td><%= info.getAddDate() %></td>
+                            </tr>
+                            <%
+                        }
+                    } else {
+                        %>
+                        <tr>
+                            <td colspan="5">No data available</td>
+                        </tr>
+                        <%
+                    }
+                %>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

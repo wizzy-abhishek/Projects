@@ -1,0 +1,40 @@
+@charset "UTF-8";
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+.header  {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+}
+
+.header form {
+    margin-top: 10px; /* Adjust top margin as needed */
+}
+
+.header button {
+    width: 45px;
+    height: 45px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.header button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}

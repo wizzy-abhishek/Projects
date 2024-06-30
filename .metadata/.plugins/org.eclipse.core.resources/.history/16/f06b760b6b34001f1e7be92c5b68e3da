@@ -1,0 +1,61 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import com.dao.Connecting_Buddy_Dao;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+
+public class View_passwords extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    public View_passwords() {
+        super();
+        
+    }
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().print("hello");
+		
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        response.setHeader("Expires", "0");
+
+        HttpSession session = request.getSession(false);
+        if (session == null) {
+            response.sendRedirect("login.jsp");
+            return;
+        }
+
+        String userID = (String) session.getAttribute("userID");
+        String password = (String) session.getAttribute("password");
+
+        if (userID == null || password == null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+
+        Connecting_Buddy_Dao dao = new Connecting_Buddy_Dao();
+        String confirmation;
+		try {
+			confirmation = dao.sessionVerify(userID, password);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+        if (!userID.equals(confirmation)) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+
+        request.setAttribute("userID", userID);
+        request.getRequestDispatcher("welcome.jsp").forward(request, response);
+	}
+
+}

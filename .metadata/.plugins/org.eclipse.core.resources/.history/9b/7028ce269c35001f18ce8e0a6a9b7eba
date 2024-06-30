@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+}
+
+.footer .center {
+    display: flex;
+    align-items: center;
+}
+
+.footer form {
+    margin-top: 10px; /* Adjust top margin as needed */
+}
+
+.footer button {
+    width: 120px;
+    height: 45px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius : 10px ;
+}
+
+.footer button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.body{
+	 background-color: #f0f0f0;
+}

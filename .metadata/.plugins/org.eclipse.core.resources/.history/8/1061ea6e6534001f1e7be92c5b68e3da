@@ -1,0 +1,31 @@
+package com.operations;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+
+import com.dao.Connecting_Buddy_Dao;
+import com.factorysetter.FactorySetter;
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+public class Operations_CURD {
+	
+	Connecting_Buddy_Dao cbdSpecial = new Connecting_Buddy_Dao(FactorySetter.factoryprovier());
+	
+	CredInfo_internal credinfo_in = new CredInfo_internal();
+	
+	RealInfo realinfo = new RealInfo();
+	
+	Connecting_Buddy_Dao cbd = new Connecting_Buddy_Dao();
+	
+	Session session = 
+	
+	public void add(String domain , String userId , String password , Date date , CredInfo_internal credinfo) {
+		
+		
+		cbd.getHm().put(credinfo , new RealInfo(domain, userId, password, new Date(), credinfo));
+		
+	}
+	
+}

@@ -1,0 +1,200 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Simple Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .left-column, .right-column {
+            width: 45%;
+            margin: 2.5%;
+        }
+
+        .scrollable-table {
+            overflow-y: auto;
+            height: calc(90vh - 60px); /* Adjust if needed */
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            background-color: #fff;
+            margin-bottom: 10px; /* Reduced margin to create less space */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        form input, form button {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 8px;
+           
+        }
+
+        .form-group {
+            width: 250px;
+            height : 60px ;
+            margin: 0 auto;
+            
+        }
+
+        .header text-center {
+            width: 300px;
+            height: 300px;
+            margin: 12.5px auto;
+            background-color: #ddd;
+            border: 1px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            color: #777;
+        }
+
+        .logout-btn {
+            background-color: cyan !important;
+            border-color: cyan !important;
+        }
+
+        @media (max-width: 768px) {
+            .left-column, .right-column {
+                width: 100%;
+                order: 1;
+            }
+
+            .scrollable-table {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+  <div class="container-fluid">
+    <a class="navbar-brand">ADD PAGE</a>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <form action="LoggedIn" method="post">
+            <button type="submit" class="btn nav-link active" aria-current="page">Home</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="Add_Details" method="post">
+            <button type="submit" class="btn nav-link">Add</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="/option2" method="get">
+            <button type="submit" class="btn nav-link">Option 2</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="/option3" method="get">
+            <button type="submit" class="btn nav-link">Option 3</button>
+          </form>
+        </li>
+        <li class="nav-item">
+          <form action="Logout" method="post">
+            <button type="submit" class="btn nav-link logout-btn">LOG OUT</button>
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="left-column">
+    <div class="header text-center">
+    <img src="Superman.png" alt="Website Logo" height="300" width="300">
+    </div>
+    
+    
+    <form action="Complete_ADD" method="post">
+        <div class="form-group">
+            <input type="text" name="Domain" placeholder="   Domain like Insta/FB" required style="width: 310px; height : 45px ;margin: 0 auto;">
+        </div>
+        <div class="form-group">
+            <input type="text" name="UserId_of_Domain" placeholder="   USER_ID like ab@12" required  style="width: 310px; height : 45px ;margin: 0 auto; ">
+        </div>
+        <div class="form-group">
+            <input type="text" name="Password_of_User_ID" placeholder="  PASSWORD OF THE ID" required  style="width: 310px; height : 45px ; margin: 0 auto; ">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-sm"  style="width: 310px; height : 45px ; margin: 0 auto; ">ADD</button>
+        </div>
+    </form>
+</div>
+<hr>
+
+<div class="right-column">
+    <div class="scrollable-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                    <th>Header 4</th>
+                    <th>Header 5</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Rows will be dynamically added here -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    // Sample data to demonstrate dynamic row addition
+    const data = [
+        ["Row 1, Col 1", "Row 1, Col 2", "Row 1, Col 3", "Row 1, Col 4", "Row 1, Col 5"],
+        ["Row 2, Col 1", "Row 2, Col 2", "Row 2, Col 3", "Row 2, Col 4", "Row 2, Col 5"],
+        ["Row 3, Col 1", "Row 3, Col 2", "Row 3, Col 3", "Row 3, Col 4", "Row 3, Col 5"]
+    ];
+
+    const tableBody = document.getElementById('table-body');
+
+    data.forEach(rowData => {
+        const row = document.createElement('tr');
+        rowData.forEach(cellData => {
+            const cell = document.createElement('td');
+            cell.textContent = cellData;
+            row.appendChild(cell);
+        });
+        tableBody.appendChild(row);
+    });
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

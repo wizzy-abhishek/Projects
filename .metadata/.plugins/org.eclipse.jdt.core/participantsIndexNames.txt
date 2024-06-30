@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+G:\FUCK OFF\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\443703884.index
+\Iam_Doing2\src\main\java
+G:\FUCK OFF\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\910888958.index
+\Iam_Doing\src\main\resources
+G:\FUCK OFF\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3363254208.index
+\Iam_Doing\src\main\java
+G:\FUCK OFF\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1628145038.index
+\E-Vault\src\main\java

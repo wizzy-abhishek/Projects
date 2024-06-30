@@ -1,0 +1,56 @@
+package com.pojo;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class CredInfo_internal {
+	
+	@Id
+	private String userID ;
+	
+	private String password ; 
+	
+	
+	@OneToMany(mappedBy = "credinfo" , fetch = FetchType.EAGER)
+	private List<RealInfo> realinfo = new LinkedList<>();
+
+	public String getUserID() {
+		return userID;
+	}
+
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public List<RealInfo> getRealinfo() {
+		return realinfo;
+	}
+
+	public void setRealinfo(List<RealInfo> realinfo) {
+		this.realinfo = realinfo;
+	}
+
+	@Override
+	public String toString() {
+		return String.format("CredInfo_internal [userID = %s, \nrealinfo= s]", userID, realinfo);
+	}
+
+	public CredInfo_internal() {
+		super();
+	}	
+
+}

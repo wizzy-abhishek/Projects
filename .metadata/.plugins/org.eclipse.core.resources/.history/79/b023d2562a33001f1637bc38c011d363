@@ -1,0 +1,31 @@
+package com.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+
+import com.pojo.CredInfo;
+
+public class LoginDao {
+	
+	Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(CredInfo.class);
+	
+	StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+	
+	SessionFactory sf = config.buildSessionFactory(registry);
+	
+	Session hibSession = sf.openSession();
+	
+	Transaction hibTx = hibSession.beginTransaction();
+	
+	
+	public boolean verify(String uId, String password) {
+		CredInfo verification = hibSession.get(CredInfo.class, uId);
+		return verification.getPassword().equals(password);
+	}
+
+}

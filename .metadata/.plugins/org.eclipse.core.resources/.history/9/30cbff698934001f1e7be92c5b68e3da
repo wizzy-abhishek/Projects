@@ -1,0 +1,54 @@
+package com.dao;
+
+import java.io.IOException;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+public class Creating extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+    Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(RealInfo.class).addAnnotatedClass(CredInfo_internal.class);
+	
+	StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+		
+	SessionFactory sessionFactory = config.buildSessionFactory(registry);
+	
+	Session session = sessionFactory.openSession();
+	
+	Transaction tx = session.beginTransaction();
+       
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+			
+			String userName = request.getParameter("userName");
+			String userId = request.getParameter("userId");
+			long userMob = Long.parseLong(request.getParameter("userMob"));
+			String password = request.getParameter("password");
+			String confirm_password = request.getParameter("confirm_password");
+			
+			try{
+				session.persist(new CredInfo_internal(userId, password, confirm_password, userName, userMob ) ) ;
+				tx.commit();
+				session.close();
+				response.sendRedirect("index.jsp");
+			}catch(Exception e) {
+				response.sendRedirect("ProblemOccured.jsp");
+			}
+		
+			
+	}
+
+}

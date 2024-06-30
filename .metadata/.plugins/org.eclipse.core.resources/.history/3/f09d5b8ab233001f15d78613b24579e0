@@ -1,0 +1,33 @@
+package com.LetsDoIt.Testing_Hibernate;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+import com.confirmation_dao.AccountConfirmation;
+
+public class App 
+{
+    public static void main( String[] args )throws IOException
+    {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        
+        System.out.println("Enter your user name");
+        String uId = br.readLine();
+        System.out.println("Enter your password");
+        String password = br.readLine();
+        
+        try {
+			if(AccountConfirmation.verify(uId , password)) {
+				System.out.println("Hello " + uId);
+			}
+			else {
+				System.out.println("Invalid");
+			}
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+        
+    }
+}

@@ -1,0 +1,41 @@
+package com.operations;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+import com.dao.Connecting_Buddy_Dao;
+import com.factorysetter.FactorySetter;
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+interface Operational_interface {
+	
+}
+
+public class Operations_CURD implements Operational_interface{
+	
+	private SessionFactory sessionFactory ;
+	
+	CredInfo_internal credinfo_in = new CredInfo_internal();
+	
+	RealInfo realinfo = new RealInfo();
+	
+	public Operations_CURD() {
+		
+	}
+	
+	public Operations_CURD (SessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory ;
+	}
+	
+	Session session = sessionFactory.openSession();
+	
+	public void add(String domain , String userId , String password , Date date , CredInfo_internal credinfo) {
+		
+		
+		
+	}
+	
+}

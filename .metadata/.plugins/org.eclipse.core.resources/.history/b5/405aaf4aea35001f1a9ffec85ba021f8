@@ -1,0 +1,62 @@
+package com.encrption_decryption;
+
+public class EncryptDecrypt {
+
+    private final int key = 81;
+
+    public String encrypt(String password) {
+        StringBuilder encrypted = new StringBuilder();
+        int alphabetKey = key % 26;  
+        int digitKey = key % 10;     
+        
+        for (char c : password.toCharArray()) {
+            if (Character.isAlphabetic(c)) {
+                int shiftedChar = c + alphabetKey;
+                if (Character.isUpperCase(c)) {
+                    if (shiftedChar > 'Z') {
+                        shiftedChar -= 26;
+                    }
+                } else if (Character.isLowerCase(c)) {
+                    if (shiftedChar > 'z') {
+                        shiftedChar -= 26;
+                    }
+                }
+                encrypted.append((char) shiftedChar);
+            } else if (Character.isDigit(c)) {
+                int shiftedDigit = (c - '0' + digitKey) % 10;
+                encrypted.append((char) ('0' + shiftedDigit));
+            } else {
+                encrypted.append(c);
+            }
+        }
+        return encrypted.toString();
+    }
+
+    public String decrypt(String encrypted) {
+        StringBuilder decrypted = new StringBuilder();
+        int alphabetKey = key % 26;  
+        int digitKey = key % 10;     
+
+        for (char c : encrypted.toCharArray()) {
+            if (Character.isAlphabetic(c)) {
+                int shiftedChar = c - alphabetKey;
+                if (Character.isUpperCase(c)) {
+                    if (shiftedChar < 'A') {
+                        shiftedChar += 26;
+                    }
+                } else if (Character.isLowerCase(c)) {
+                    if (shiftedChar < 'a') {
+                        shiftedChar += 26;
+                    }
+                }
+                decrypted.append((char) shiftedChar);
+            } else if (Character.isDigit(c)) {
+                int shiftedDigit = (c - '0' - digitKey + 10) % 10;
+                decrypted.append((char) ('0' + shiftedDigit));
+            } else {
+                decrypted.append(c);
+            }
+        }
+        return decrypted.toString();
+    }
+}

@@ -1,0 +1,866 @@
+!SESSION 2024-06-30 01:48:29.801 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=22.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file G:\FUCK OFF\.metadata\.bak_0.log
+Created Time: 2024-06-30 02:19:58.183
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:19:58.184
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:19:58.188
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:20:21.496
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:20:21.501
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:21:44.642
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:21:44.649
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:22:01.844
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:22:01.849
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:00.797
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:00.801
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:15.964
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:15.970
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:27.511
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:27.516
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:37.718
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:23:37.723
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:25:13.268
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:25:13.274
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:25:27.022
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:25:27.028
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:25:48.607
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:25:48.610
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:26:05.835
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:26:05.842
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:26:47.418
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:26:47.422
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:28:20.243
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 02:28:20.249
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.791
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.796
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.802
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.807
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.810
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.814
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.817
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-06-30 02:32:10.820
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.jboss.tools.usage.event.UsageReporter$ReportingJob
+!SESSION 2024-06-30 12:13:32.319 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=22.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 12:13:37.737
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 12:13:39.912
+!MESSAGE Logback config file: G:\FUCK OFF\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 12:13:40.420
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 12:13:40.420
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 12:13:40.877
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 12:13:40.877
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-30 12:13:45.844
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\works'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.373
+!MESSAGE Classpath changed for project: E-Vault
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.375
+!MESSAGE Classpath changed for project: angus-activation-2.0.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.377
+!MESSAGE Classpath changed for project: antlr4-runtime-4.13.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.378
+!MESSAGE Classpath changed for project: byte-buddy-1.14.15
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.382
+!MESSAGE Classpath changed for project: classmate-1.5.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.385
+!MESSAGE Classpath changed for project: hibernate-commons-annotations-6.0.6.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.386
+!MESSAGE Classpath changed for project: istack-commons-runtime-4.1.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.389
+!MESSAGE Classpath changed for project: jakarta.activation-api-2.1.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.392
+!MESSAGE Classpath changed for project: jakarta.inject-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.393
+!MESSAGE Classpath changed for project: jakarta.persistence-api-3.1.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.394
+!MESSAGE Classpath changed for project: jakarta.transaction-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.396
+!MESSAGE Classpath changed for project: jakarta.xml.bind-api-4.0.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.397
+!MESSAGE Classpath changed for project: jandex-3.1.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.402
+!MESSAGE Classpath changed for project: jaxb-core-4.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.403
+!MESSAGE Classpath changed for project: jaxb-runtime-4.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.405
+!MESSAGE Classpath changed for project: jboss-logging-3.5.0.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.406
+!MESSAGE Classpath changed for project: jsp-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.406
+!MESSAGE Classpath changed for project: mysql-connector-j-8.4.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.407
+!MESSAGE Classpath changed for project: protobuf-java-3.25.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.409
+!MESSAGE Classpath changed for project: servlet-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:13:47.410
+!MESSAGE Classpath changed for project: txw2-4.0.2
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.082
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.464
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.465
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.466
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.467
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.468
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.468
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.469
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.470
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.473
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.474
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.475
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.476
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.476
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.477
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.478
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.478
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:13:48.479
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 12:13:59.033
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 12:13:59.052
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 12:14:02.588
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-22\bin\javaw.exe
+-cp
+C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=G:/FUCK OFF/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1719729842588
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:14:02.589
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 12:14:02.594
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 17484
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:14:02.610
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:14:02.621
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:14:02.622
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:14:02.623
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:14:02.635
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:14:02.640
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2024-06-30 12:14:44.802 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=22.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data G:\FUCK OFF
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 12:14:47.401
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 12:14:48.966
+!MESSAGE Logback config file: G:\FUCK OFF\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 12:14:49.438
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 12:14:49.438
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 12:14:49.846
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 12:14:49.846
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-30 12:14:54.631
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\works'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:14:55.440
+!MESSAGE Classpath changed for project: Iam_Doing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:14:55.441
+!MESSAGE Classpath changed for project: Mapping_HIb
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:14:55.441
+!MESSAGE Classpath changed for project: Testing_Hibernate
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.602
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.915
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.917
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.918
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.919
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.919
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.921
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.922
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.923
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.928
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.930
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.931
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.932
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.932
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.934
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.935
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.936
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 12:14:56.936
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:14:57.649
+!MESSAGE Classpath changed for project: ManyToMany
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 12:14:57.651
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 12:14:57.677
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:15:08.526
+!MESSAGE Classpath changed for project: angus-activation-2.0.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:15:15.312
+!MESSAGE Classpath changed for project: antlr4-runtime-4.13.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:15:21.457
+!MESSAGE Classpath changed for project: byte-buddy-1.14.15
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:15:34.157
+!MESSAGE Classpath changed for project: classmate-1.5.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:15:41.130
+!MESSAGE Classpath changed for project: E-Vault
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:15:50.200
+!MESSAGE Classpath changed for project: hibernate-commons-annotations-6.0.6.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:16:04.442
+!MESSAGE Classpath changed for project: istack-commons-runtime-4.1.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:16:13.064
+!MESSAGE Classpath changed for project: jakarta.activation-api-2.1.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:16:23.629
+!MESSAGE Classpath changed for project: jakarta.inject-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:16:33.797
+!MESSAGE Classpath changed for project: servlet-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:16:45.054
+!MESSAGE Classpath changed for project: txw2-4.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:16:54.353
+!MESSAGE Classpath changed for project: mysql-connector-j-8.4.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:05.214
+!MESSAGE Classpath changed for project: protobuf-java-3.25.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:11.529
+!MESSAGE Classpath changed for project: jsp-api
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:15.389
+!MESSAGE Classpath changed for project: jboss-logging-3.5.0.Final
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:20.967
+!MESSAGE Classpath changed for project: jakarta.persistence-api-3.1.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:23.828
+!MESSAGE Classpath changed for project: jakarta.transaction-api-2.0.1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:26.551
+!MESSAGE Classpath changed for project: jakarta.xml.bind-api-4.0.0
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:31.192
+!MESSAGE Classpath changed for project: jandex-3.1.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:35.615
+!MESSAGE Classpath changed for project: jaxb-core-4.0.2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:38.632
+!MESSAGE Classpath changed for project: jaxb-runtime-4.0.2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 12:17:42.062
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-22\bin\javaw.exe
+-cp
+C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=G:/FUCK OFF/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1719730062061
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 12:17:42.062
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 12:17:42.069
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 14120
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:17:42.082
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:17:42.083
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:17:42.084
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:17:42.085
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:17:42.095
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 12:17:42.100
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 12:18:25.693
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 12:18:25.699
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2024-06-30 14:37:33.654 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=22.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 14:37:40.001
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 14:37:41.931
+!MESSAGE Logback config file: G:\FUCK OFF\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 14:37:42.593
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 14:37:42.594
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 14:37:43.118
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 14:37:43.118
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-30 14:37:49.178
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\works'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:50.290
+!MESSAGE Classpath changed for project: Iam_Doing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:50.292
+!MESSAGE Classpath changed for project: ManyToMany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:50.294
+!MESSAGE Classpath changed for project: Testing_Hibernate
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:52.594
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:53.171
+!MESSAGE Classpath changed for project: Iam_Doing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:53.172
+!MESSAGE Classpath changed for project: ManyToMany
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:53.173
+!MESSAGE Classpath changed for project: Mapping_HIb
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.250
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.253
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.255
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.256
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.258
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.258
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.259
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.260
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.262
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.264
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.265
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.265
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.266
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.267
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.269
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.270
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 14:37:53.271
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 14:37:58.492
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-22\bin\javaw.exe
+-cp
+C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=G:/FUCK OFF/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1719738478491
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:37:58.494
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 14:37:58.529
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 14:37:58.531
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 14:37:58.534
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 9964
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 14:37:58.535
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 14:37:58.537
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 14:37:58.554
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 14:37:58.572
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:52:50.223
+!MESSAGE Classpath changed for project: Iam_Doing2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 14:52:51.471
+!MESSAGE Classpath changed for project: Iam_Doing2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 14:52:52.136
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 14:52:52.147
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 16:07:23.974
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 16:07:23.985
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.ui 4 0 2024-06-30 16:10:00.904
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.springsource.ide.eclipse.commons.ui.launch.LaunchList.getLast()" because "this.launches" is null
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown.update(AbstractLaunchToolbarPulldown.java:112)
+	at org.springsource.ide.eclipse.commons.ui.launch.AbstractLaunchToolbarPulldown$3.run(AbstractLaunchToolbarPulldown.java:134)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4058)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3676)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:168)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:370)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:470)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:230)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:559)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.run(IDEWorkbenchAdvisor.java:366)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:387)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:2981)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1141)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1409)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1409)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1385)
+	at org.eclipse.ui.internal.Workbench.lambda$16(Workbench.java:2783)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4285)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4277)
+	at org.eclipse.swt.widgets.Display.messageProc(Display.java:3285)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3668)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+!SESSION 2024-06-30 16:54:46.828 -----------------------------------------------
+eclipse.buildId=4.32.0.20240606-1231
+java.version=22.0.1
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 16:54:51.865
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-06-30 16:54:53.533
+!MESSAGE Logback config file: G:\FUCK OFF\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 16:54:54.049
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 16:54:54.049
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-06-30 16:54:54.427
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-06-30 16:54:54.427
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 16:54:59.162
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 16:54:59.164
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 16:54:59.165
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 16:54:59.166
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 16:54:59.166
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+C:\Program Files\Java\jdk-22\bin\javaw.exe
+-cp
+C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes;C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:C:\Users\works\eclipse\jee-2024-06\eclipse\..\..\..\.p2\pool\plugins\org.springframework.tooling.boot.ls_1.55.1.202406141939\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=G:/FUCK OFF/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1719746699165
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 16:54:59.167
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 16:54:59.178
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-06-30 16:54:59.184
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-06-30 16:54:59.185
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 12540
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-06-30 16:55:01.566
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\works'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:06.883
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.577
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.578
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.579
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.580
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.580
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.581
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.581
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.582
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.583
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.585
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.586
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.587
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.588
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.589
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.589
+!MESSAGE Could not send USER event 'Anonymous ID: b53d9bb1-ad0c-4ebb-a0bd-53a78f0dfc64': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.590
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2024-06-30 16:55:07.590
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-06-30 16:55:20.054
+!MESSAGE Classpath changed for project: Iam_Doing2
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 16:56:22.580
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2024-06-30 16:56:22.598
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!

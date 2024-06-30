@@ -1,0 +1,62 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.dao.Connecting_Buddy_Dao;
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+
+public class Login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+  
+    public Login() {
+        super();
+    }
+    
+    Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(RealInfo.class).addAnnotatedClass(CredInfo_internal.class);
+	
+	StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+		
+	SessionFactory sessionFactory = config.buildSessionFactory(registry);
+	
+	Session session = sessionFactory.openSession();
+	
+	Connecting_Buddy_Dao loginDao = new Connecting_Buddy_Dao();
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		try {
+			String uId = request.getParameter("uId");
+			String password = request.getParameter("password");		
+				
+			if(loginDao.verify(uId, password)) 
+			{
+				HttpSession httpsession = request.getSession();
+				httpsession.setAttribute("userId", uId);
+				httpsession.setAttribute("password",password);
+				httpsession.setAttribute("userName", CredInfo_internal.class.getName());
+				response.sendRedirect("Info.jsp");
+			
+			}else {
+				response.sendRedirect("index.jsp");
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+

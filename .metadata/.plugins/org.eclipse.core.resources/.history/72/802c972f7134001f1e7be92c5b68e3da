@@ -1,0 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek's Page</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <p>WHY WORRY WE ARE HERE </p>
+            <form action="View_passwords" method="post">
+                <button type="submit">VIEW MY PASSWORDS</button>
+            </form>
+            <form action="delete_account" method="post">
+                <button type="submit">DELETE MY ACCOUNT</button>
+            </form>
+            <div class="logos">
+                <img src="java_logo.png" alt="Java Logo" style = "width : 80px ; height : 110px ;">
+                <img src="hibernate_logo.png" alt="Hibernate Logo" style="width: 180px; height: 75px;">
+                <img src="mysql.png" alt="Mysql_Logo "style="width: 100px; height: 75px;">
+            </div>
+        </div>
+        <div class="main">
+            <h1>Hello</h1>
+            <h2>I'm Abhishek</h2>
+            <p>I am a Java Developer and this is my first work of my craft. I hope you like it. I would appreciate your feedback. I will keep developing 				new things and I hope you will be my team and help me out by testing my innovative ideas and motivating me through that.</p>
+            <div class="footer">
+                <a href="https://www.linkedin.com/in/abhishek-anand-60b529257/" target="_blank">
+                    <img src="linkedin_logo.png" alt="LinkedIn Logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

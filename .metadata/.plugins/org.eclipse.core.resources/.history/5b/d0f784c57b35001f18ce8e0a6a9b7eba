@@ -1,0 +1,44 @@
+package com.operational_servlets;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+/**
+ * Servlet implementation class Deleted
+ */
+public class Deleted extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	private RealInfo realinfo_add ;
+    private CredInfo_internal credinfo_detail ;
+    
+    private SessionFactory sessionFactory ;
+
+	@Override
+    public void init() throws ServletException {
+        Configuration config = new Configuration().configure("hibernate.cfg.xml")
+            .addAnnotatedClass(RealInfo.class)
+            .addAnnotatedClass(CredInfo_internal.class);
+        
+        StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
+            .applySettings(config.getProperties()).build();
+        
+        sessionFactory = config.buildSessionFactory(registry);
+    }
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

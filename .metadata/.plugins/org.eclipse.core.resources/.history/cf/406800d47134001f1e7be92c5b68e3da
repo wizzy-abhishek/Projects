@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    top: -20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logos img {
+    margin: 10px 0;
+    width: 50px; /* Adjust width for other logos if needed */
+    height: 50px;
+}
+
+.main {
+    flex: 2;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.main h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+    display: flex; /* Added to style Linked In content */
+    align-items: center; /* Added to style Linked In content */
+}
+
+.footer img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-right: 5px;  /* Added spacing between logo and link text */
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

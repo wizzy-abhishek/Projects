@@ -1,0 +1,21 @@
+1719341993729	Delete element
+1719343325045	Move 'hibernate.cfg.xml' to 'main'
+1719343426232	Move 'hibernate.cfg.xml' to 'resources'
+1719343437450	Move 'hibernate.cfg.xml' to 'java'
+1719345032691	Move 'hibernate.cfg.xml' to 'resources'
+1719425065218	Delete element
+1719425069507	Move 'CredInfo_internal.java' to 'pojo'
+1719425074009	Move 'RealInfo.java' to 'pojo'
+1719425128434	Move 'Connecting_Buddy.java' to 'dao'
+1719425232602	Rename type 'Connecting_Buddy'
+1719425275537	Delete element
+1719471513048	Rename resource '5e816893731b9f2c530099a2550dda4a.png'
+1719471531384	Rename resource 'Hibernate_logo.svg'
+1719471567096	Rename resource '317750_linkedin_icon.png'
+1719473301980	Rename resource 'monket_logo.jpeg'
+1719493960280	Delete element
+1719506130681	Delete element
+1719572572561	Rename resource 'operations'
+1719581754337	Rename local variable 'httpsession'
+1719612116794	Rename resource 'SUPERMAN.png'
+1719692625851	Delete element

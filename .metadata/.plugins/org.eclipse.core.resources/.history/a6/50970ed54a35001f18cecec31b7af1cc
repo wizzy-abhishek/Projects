@@ -1,0 +1,49 @@
+package com.operational_servlets;
+
+import java.io.IOException;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+
+public class Complete_ADD extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session = request.getSession();
+		
+		String userID = (String)session.getAttribute("userID");
+        String password = (String)session.getAttribute("password");
+
+        if (userID == null || password == null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+        
+        Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(RealInfo.class).addAnnotatedClass(CredInfo_internal.class);
+    	
+    	StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+    		
+    	SessionFactory sessionFactory = config.buildSessionFactory(registry);
+    	
+    	try(Session hib_session = sessionFactory.openSession()){
+    		Transaction tx = hib_session.beginTransaction();
+    		
+    		
+    	}
+	}
+
+}

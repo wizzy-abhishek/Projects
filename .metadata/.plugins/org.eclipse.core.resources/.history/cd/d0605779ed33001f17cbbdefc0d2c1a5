@@ -1,0 +1,36 @@
+package com.dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+
+public class Connecting_Buddy_Dao {
+	
+	static Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(RealInfo.class).addAnnotatedClass(CredInfo_internal.class);
+	
+	static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+		
+	static SessionFactory sf = config.buildSessionFactory(registry);
+	
+	static Session session = sf.openSession();
+	
+	Transaction tx = session.beginTransaction();
+	
+	public static boolean verify(String uID , String password) {
+		try{
+		CredInfo_internal credinfo = session.find(CredInfo_internal.class, uID);
+			return credinfo.getPassword().equals(password) ;
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+}

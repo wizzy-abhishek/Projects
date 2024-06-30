@@ -1,0 +1,48 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.dao.Connecting_Buddy_Dao;
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+public class View_passwords extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	Connecting_Buddy_Dao cbd = new Connecting_Buddy_Dao();
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		HttpSession session = request.getSession();
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        response.setHeader("Expires", "0");
+        
+        String userID = (String)session.getAttribute("userID");
+        String password = (String)session.getAttribute("password");
+
+        if (userID == null || password == null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+        if(cbd.sessionVerify(userID, password) != userID) {
+        	response.sendRedirect("index.jsp");
+        	return;
+        }
+
+        request.setAttribute("userID", userID);
+        request.getRequestDispatcher("Details_Action.jsp").forward(request, response);
+	}
+
+}

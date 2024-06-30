@@ -1,0 +1,38 @@
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import com.pojo.CredInfo_internal;
+
+interface CredentialsDao {
+    public boolean verify(String uID, String password) throws Exception;
+}
+
+public class Connecting_Buddy_Dao implements CredentialsDao {
+
+    private SessionFactory sessionFactory;
+
+    public Connecting_Buddy_Dao(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    @SuppressWarnings({ "rawtypes", "deprecation" })
+	@Override
+    public boolean verify(String uID, String password) throws Exception {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction tx = session.beginTransaction();
+
+            try {
+                String query = "SELECT * FROM CredInfo_internal WHERE uID=:uID AND password=:password";
+                Query q = session.createQuery(query);
+                q.setParameter("uID", uID);
+                q.setParameter("password", password); // Hash password before storing (not shown here)
+                CredInfo_internal credinfo = (CredInfo_internal) q.uniqueResult();
+                return credinfo != null; // Secure with prepared statements
+            } finally {
+                tx.commit();
+            }
+        }
+    }
+}

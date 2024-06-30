@@ -1,0 +1,46 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import com.dao.Connecting_Buddy_Dao;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+
+public class View_passwords extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		HttpSession session = request.getSession(false);
+		
+		response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+        response.setHeader("Expires", "0");
+        
+        Connecting_Buddy_Dao dao = new Connecting_Buddy_Dao();
+		String confirmation = dao.sessionVerify((String)(session).getAttribute("userID"), (String)session.getAttribute("password"));
+
+        
+        String userID = (String) session.getAttribute("userID");
+        String password = (String) session.getAttribute("password");
+
+        if (userID == null || password == null) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+
+
+        if (!userID.equals(confirmation)) {
+            response.sendRedirect("index.jsp");
+            return;
+        }
+
+        request.setAttribute("userID", userID);
+        request.getRequestDispatcher("Details_Action.jsp").forward(request, response);
+	}
+
+}

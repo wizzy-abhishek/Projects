@@ -1,0 +1,20 @@
+package com.operations;
+
+import java.util.Date;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+public class Operations_CURD {
+	
+	CredInfo_internal credinfo_in = new CredInfo_internal();
+	
+	RealInfo realinfo = new RealInfo();
+	
+	public void add(String domain , String userId , String password , Date date , CredInfo_internal credinfo) {
+		
+		new RealInfo(domain, userId, password, date, credinfo);
+		
+	}
+	
+}

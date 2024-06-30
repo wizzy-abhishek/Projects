@@ -1,0 +1,84 @@
+package com.pojo;
+
+import java.util.LinkedList;
+
+import java.util.List;
+
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
+
+@Entity
+public class CredInfo_internal {
+	
+	@Id
+	private String userID ;
+	@Column
+	private String password ; 
+	@Column
+	private String yourName ;
+	@Column
+	private long yourMob ;
+	
+	@OneToMany(mappedBy = "credinfo" , fetch = FetchType.LAZY )
+	private List<RealInfo> realinfo = new LinkedList<>();
+
+	public String getUserID() {
+		return userID;
+	}
+
+	public void setUserID(String userID) {
+		this.userID = userID;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public List<RealInfo> getRealinfo() {
+		return realinfo;
+	}
+
+	public void setRealinfo(List<RealInfo> realinfo) {
+		this.realinfo = realinfo;
+	}
+
+	public String getYourName() {
+		return yourName;
+	}
+
+	public void setYourName(String yourName) {
+		this.yourName = yourName;
+	}
+
+	public long getYourMob() {
+		return yourMob;
+	}
+
+	public void setYourMob(long yourMob) {
+		this.yourMob = yourMob;
+	}
+
+	public CredInfo_internal() {
+	}
+	
+	public CredInfo_internal(String userID, String password, String yourName, long yourMob) {
+		this.userID = userID;
+		this.password = password;
+		this.yourName = yourName;
+		this.yourMob = yourMob;
+		
+	}
+
+	@Override
+	public String toString() {
+		return "CredInfo_internal [userID =" + userID + "\nrealinfo=" + realinfo + "]";
+	}	
+	
+}

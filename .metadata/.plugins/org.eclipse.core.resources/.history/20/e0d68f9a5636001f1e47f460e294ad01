@@ -1,0 +1,213 @@
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8" errorPage = "ProblemOccured.jsp" %>
+    <%@ page import = "com.pojo.CredInfo_internal" %>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Info.css">
+    <title>Main</title>
+    <link href="WEBSITE_LOGO.png" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="Styles.css">
+    <style type="">
+    
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+   
+}
+
+.footer .center {
+    display: flex;
+    align-items: center;
+}
+
+.footer form {
+    margin-top: 10px; /* Adjust top margin as needed */
+}
+
+.footer button {
+    width: 120px;
+    height: 45px;
+    background-color: #007bff; /* Blue color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius : 10px ;
+}
+
+.footer button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    display: block;
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.logos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logos img {
+    margin: 10px 0;
+    width: 50px; /* Adjust width for other logos if needed */
+    height: 50px;
+}
+
+.main {
+    flex: 2;
+    padding: 20px;
+}
+
+.main h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.main h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+}
+
+.footer .center {
+    margin: 0 auto;
+}
+
+.footer img {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    margin-right: 10px;  /* Added spacing between logo and link text */
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}</style>
+</head>
+<body>
+<%response.setHeader("Cache-Control", "no-cache , no-store , must-revalidate");
+	response.setHeader("Pragma", "no-cache");
+%>
+    <div class="container">
+        <div class="sidebar">
+            <p>WHY WORRY WE ARE HERE</p>
+            <form action="View_passwords" method="post">
+                <button type="submit" class="btn btn-primary">VIEW MY PASSWORDS</button>
+            </form>
+            <form action="Delete_account" method="post">
+                <button type="submit" class="btn">DELETE MY ACCOUNT</button>
+            </form>
+            <div class="logos">
+                <img src="java_logo.png" alt="Java Logo" style="width: 80px; height: 110px;">
+                <img src="hibernate_logo.png" alt="Hibernate Logo" style="width: 180px; height: 75px;">
+                <img src="mysql.png" alt="Mysql_Logo" style="width: 100px; height: 75px;">
+                <img src="JAKARTA.png" alt="Mysql_Logo" style="width: 100px; height: 75px;">
+            </div>
+        </div>
+        <div class="main">
+       		<%response.setHeader("Cache-Control", "no-cache , no-store , must-revalidate");
+    		response.setHeader("Expires", "0"); %>
+    		<img src="JAVA_CUP_LOGO.png" alt="Mysql_Logo" style="width: 150px; height: 150px;">
+            <h1>Hello...<!-- ${username} --></h1>
+            <h2>I'm Abhishek</h2>
+            <p>I am a Java Developer and this is my first work of my craft. I hope you like it. I would appreciate your feedback. I will keep developing new things and I hope you will be my team and help me out by testing my innovative ideas and motivating me through that.</p>
+        	
+        </div>
+        </div>
+<div class="footer">
+    <div class="center">
+        <form action="Logout" method="post">
+            <button type="submit" class="btn btn-primary" style="margin-top: 10px;">Log Out</button>
+        </form>
+    </div>
+    <div class="center">
+        <a href="https://www.linkedin.com/in/abhishek-anand-60b529257/" target="_blank">
+            <img src="linkedin_logo.png" alt="LinkedIn Logo" style="width: 60px; height: 60px;">
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

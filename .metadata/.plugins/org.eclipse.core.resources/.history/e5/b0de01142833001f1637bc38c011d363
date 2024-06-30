@@ -1,0 +1,46 @@
+package com.servlets;
+
+import java.io.IOException;
+
+import com.dao.LoginDao;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
+
+public class Login extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+  
+    public Login() {
+        super();
+    }
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		LoginDao loginDao = new LoginDao();
+		
+		try {
+			String uId = request.getParameter("uId");
+			String password = request.getParameter("password");		
+				
+			if(loginDao.verify(uId, password)) 
+			{
+				HttpSession httpsession = request.getSession();
+				httpsession.setAttribute("userId", uId);
+				httpsession.setAttribute("password",password);
+				response.getWriter().print("Hello baby");
+			
+			}else {
+				response.sendRedirect("login.jsp");
+			}
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}
+

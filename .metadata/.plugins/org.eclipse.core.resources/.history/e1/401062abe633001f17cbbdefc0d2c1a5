@@ -1,0 +1,50 @@
+package com.internalWork.Dao;
+
+import java.util.Date;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.boot.registry.StandardServiceRegistry;
+import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+
+public class Connecting_Buddy {
+	
+	static Configuration config = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(RealInfo.class).addAnnotatedClass(CredInfo_internal.class);
+	
+	static StandardServiceRegistry registry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
+		
+	static SessionFactory sf = config.buildSessionFactory(registry);
+	
+	static Session session = sf.openSession();
+	
+	Transaction tx = session.beginTransaction();
+	
+	
+	
+	public CredInfo_internal fetching(String uId) {
+		CredInfo_internal credinfo = session.get(CredInfo_internal.class, uId );
+		return credinfo ;
+	}
+	
+	public void save(CredInfo_internal credinfo_internal , RealInfo realinfo , String uId) {
+
+    	credinfo_internal.setUserID(uId);
+    	credinfo_internal.setPassword("12345");
+    	realinfo.setAddDate(new Date());
+    	realinfo.setDomain("Phone");
+    	realinfo.setUserID("Abhishek@08");
+    	realinfo.setPassword("123456789");
+    	realinfo.setCredinfo(credinfo_internal);
+    	
+    	credinfo_internal.getRealinfo().add(realinfo);
+    	session.persist(credinfo_internal);
+    	session.persist(realinfo);
+    	tx.commit();
+	}
+}

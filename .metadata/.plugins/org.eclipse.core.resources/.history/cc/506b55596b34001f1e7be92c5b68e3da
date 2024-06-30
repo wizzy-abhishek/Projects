@@ -1,0 +1,73 @@
+package com.dao;
+
+import java.util.HashMap;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+interface CredentialsDao {
+    public boolean verify(String uID, String password) throws Exception;
+}
+
+public class Connecting_Buddy_Dao implements CredentialsDao {
+
+    private SessionFactory sessionFactory;
+    private final HashMap<String, RealInfo> hashMap = new HashMap<>();
+
+    public Connecting_Buddy_Dao() {
+    }
+
+    public Connecting_Buddy_Dao(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+
+    public synchronized HashMap<String, RealInfo> getHashMap() {
+        return new HashMap<>(hashMap);
+    }
+
+    public synchronized void setHashMap(HashMap<String, RealInfo> hashMap) {
+        this.hashMap.clear();
+        this.hashMap.putAll(hashMap);
+    }
+
+    @Override
+    public synchronized boolean verify(String userID, String password) throws Exception {
+        RealInfo realInfo = hashMap.get(userID);
+
+        if (realInfo == null) {
+            // Fetch from database if not in cache
+            try (Session session = sessionFactory.openSession()) {
+                Transaction tx = session.beginTransaction();
+                try {
+                    CredInfo_internal credInfo = session.find(CredInfo_internal.class, userID);
+                    if (credInfo != null) {
+                        for (RealInfo info : credInfo.getRealinfo()) {
+                            hashMap.put(userID, info);
+                        }
+                        tx.commit();
+                        return credInfo.getPassword().equals(password);
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                } finally {
+                    session.close();
+                }
+                return false;
+            }
+        } else {
+            return realInfo.getPassword().equals(password);
+        }
+    }
+
+    public String sessionVerify(String userID, String password) {
+        RealInfo realInfo = hashMap.get(userID);
+        if (realInfo != null && realInfo.getPassword().equals(password)) {
+            return userID;
+        }
+        return null;
+    }
+}

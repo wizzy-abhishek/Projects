@@ -1,0 +1,59 @@
+package com.dao;
+
+import java.util.HashMap;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.pojo.CredInfo_internal;
+import com.pojo.RealInfo;
+
+interface CredentialsDao {
+    public boolean verify(String uID, String password) throws Exception;
+}
+
+public class Connecting_Buddy_Dao implements CredentialsDao {
+
+    private SessionFactory sessionFactory;
+    
+    public Connecting_Buddy_Dao() {
+    	
+    }
+    
+    public Connecting_Buddy_Dao(SessionFactory sessionFactory) {
+        this.sessionFactory = sessionFactory;
+    }
+    
+    private HashMap<CredInfo_internal , RealInfo> hm = new HashMap<>();
+
+	public HashMap<CredInfo_internal, RealInfo> getHm() {
+		return hm;
+	}
+
+	public void setHm(HashMap<CredInfo_internal, RealInfo> hm) {
+		this.hm = hm;
+	}
+
+	@Override
+    public boolean verify(String userID, String password) throws Exception {
+        try (Session session = sessionFactory.openSession()) {
+            Transaction tx = session.beginTransaction();
+        		try{
+        		CredInfo_internal credinfo = session.find(CredInfo_internal.class, userID);
+        		for(RealInfo realinfo : credinfo.getRealinfo()) {
+        			hm.put(credinfo, realinfo);
+        		}
+        		tx.commit();
+        		
+        		return credinfo.getPassword().equals(password);
+        		}catch(Exception e) {
+        			e.printStackTrace();
+        		}finally {
+        			session.close();
+        		}
+        		return false;
+        	}
+    }
+	
+}
